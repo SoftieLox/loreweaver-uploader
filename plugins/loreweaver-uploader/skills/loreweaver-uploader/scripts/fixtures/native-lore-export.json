@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Mara Venn",
+    "type": "character",
+    "description": "An impossible cartographer who maps streets before they exist.",
+    "tags": ["Mara", "cartographer"],
+    "importance": 5,
+    "pinned": true,
+    "activeForPrompt": true,
+    "image": null
+  },
+  {
+    "title": "The Unwritten Quarter",
+    "type": "location",
+    "description": "A district that appears only on unfinished maps.",
+    "tags": ["district", "map"],
+    "importance": 4,
+    "pinned": false,
+    "activeForPrompt": true,
+    "image": null
+  },
+  {
+    "title": "The First Revision",
+    "type": "event",
+    "description": "The night the city changed its own history.",
+    "tags": ["history", "revision"],
+    "importance": 3,
+    "pinned": false,
+    "activeForPrompt": false,
+    "image": null
+  }
+]

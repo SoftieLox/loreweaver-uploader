@@ -1,0 +1,25 @@
+{
+  "title": "Clockwork Harbour",
+  "description": "A harbour where ships sail through time.",
+  "language": "English",
+  "tags": ["Fantasy", "Mystery"],
+  "backstory": "Clockwork Harbour opens on a different century with every tide.",
+  "greetings": ["The tide bell rings thirteen times."],
+  "custom_instructions": "Preserve player agency.",
+  "cover_image": null,
+  "lore": [
+    {
+      "type": "Character",
+      "name": "Bell Keeper",
+      "summary": "Keeper of impossible tides",
+      "content": "The Bell Keeper remembers every century.",
+      "priority": 4,
+      "image": null
+    }
+  ],
+  "settings": {
+    "force_character": "Bell Keeper",
+    "separate_user_character": true,
+    "public_scenario": false
+  }
+}

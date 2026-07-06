@@ -1,0 +1,59 @@
+{
+  "name": "loreweaver-uploader",
+  "version": "0.1.0+codex.20260706110520",
+  "description": "Design, validate, import, playtest, and publish living worlds and character experiences for LoreWeaver AI.",
+  "author": {
+    "name": "SoftieLox",
+    "url": "https://github.com/kcaswell1811-design"
+  },
+  "homepage": "https://github.com/kcaswell1811-design/loreweaver-uploader",
+  "repository": "https://github.com/kcaswell1811-design/loreweaver-uploader",
+  "license": "MIT",
+  "keywords": [
+    "loreweaver",
+    "worldbuilding",
+    "interactive-fiction",
+    "roleplay",
+    "lore",
+    "loom-engine",
+    "fictionlab",
+    "character-cards"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "LoreWeaver Uploader",
+    "shortDescription": "Design, validate, convert, and publish LoreWeaver worlds.",
+    "longDescription": "A complete LoreWeaver creation toolkit for worlds and character experiences. Designs structured lore and LoreMap relationships; authors and tests Loom Engine systems; losslessly round-trips native LoreWeaver lore and Loom JSON; converts FictionLab, Character Card, SillyTavern, and lorebook formats; detects canon, retrieval, graph, and context problems; generates QA reports, playtests, diffs, and version snapshots; prepares privacy-safe public copies; and safely imports, updates, playtests, or publishes through the authenticated LoreWeaver web app.",
+    "developerName": "SoftieLox",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write",
+      "World & Character Design",
+      "Native Lore Import & Export",
+      "Native Loom Import & Export",
+      "FictionLab & Character Card Conversion",
+      "LoreMap Relationship Design",
+      "Loom Engine Authoring & Testing",
+      "Lore Validation & QA",
+      "Canon & Retrieval Analysis",
+      "Context Budget Analysis",
+      "Diffs & Version History",
+      "Playtest Plan Generation",
+      "Privacy-Safe Publishing",
+      "Authenticated Browser Uploads"
+    ],
+    "websiteURL": "https://www.loreweaverai.com/",
+    "defaultPrompt": [
+      "Help me design a new LoreWeaver world from an idea.",
+      "Turn this world bible into structured LoreWeaver lore cards.",
+      "Build and validate Loom Engine logic for this adventure."
+    ],
+    "brandColor": "#8B5CF6",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "screenshots": [
+      "./assets/screenshot1.png"
+    ]
+  }
+}

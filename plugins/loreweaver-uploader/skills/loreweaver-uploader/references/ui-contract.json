@@ -1,0 +1,52 @@
+{
+  "contract_version": "0.2",
+  "verified_authenticated": true,
+  "recorded_at": "2026-07-06T11:25:00+01:00",
+  "source": "Authenticated, read-mostly inspection of LoreWeaver web UI.",
+  "surfaces": {
+    "hub": {
+      "route": "https://www.loreweaverai.com/hub",
+      "required_controls": ["Search worlds...", "My Stuff", "Images", "Everyone", "Teen", "Mature"]
+    },
+    "my_stuff": {
+      "route": "https://www.loreweaverai.com/my-stuff",
+      "required_controls": ["Create World", "+ Character", "Import", "All", "Created", "Downloaded", "Last Played"]
+    },
+    "world_creator": {
+      "required_controls": ["Choose Template", "Basics", "Tone & Style", "Session Start", "Review", "Complete setup"],
+      "immediate_writes": ["Complete setup", "Generate with AI", "Generate image"]
+    },
+    "character_creator": {
+      "required_controls": ["AI Generation", "Character Idea", "Generate Character", "Skip", "Basics", "Tone & Style"],
+      "immediate_writes": ["Generate Character", "Complete setup", "Generate image"]
+    },
+    "lore_editor": {
+      "required_controls": ["Search lore...", "Import lore", "Export lore", "Add", "Character", "Location", "Faction", "Item", "Event/History", "Misc", "Cards", "LoreMap"],
+      "create_fields": ["Entry title", "type", "importance 1–5", "description", "tags"],
+      "native_imports": ["LoreWeaver JSON lore export", "AI Dungeon story cards JSON", "NovelAI .lorebook"]
+    },
+    "settings": {
+      "required_controls": ["Identity", "Story", "Preferences", "Appearance", "Memory", "AI", "Audio"],
+      "identity_fields": ["Cover Image", "Title", "Premise / Setting", "Tone / Genre", "Style Rules", "Session Starters"],
+      "preference_controls": ["emergent lore detection", "LoreMap influences context", "auto-scroll", "auto scene generation"],
+      "write_behavior": "changes may auto-save"
+    },
+    "loom": {
+      "required_controls": ["Search threads…", "New", "Templates", "Manage", "Export threads", "Import threads", "Story World State", "IF", "THEN", "Settings"],
+      "immediate_writes": ["New", "Delete thread", "enable/disable", "field edits"],
+      "settings_fields": ["tags", "priority", "repeat", "visibility", "cooldown", "maximum fires"],
+      "template_count": 43
+    },
+    "world_import": {
+      "required_controls": ["LoreWeaver JSON", "AI Dungeon ZIP export", "FictionLab JSON export", "NovelAI .story"]
+    }
+  },
+  "documented_capabilities": {
+    "world_types": ["world", "character"],
+    "lore_types": ["character", "location", "faction", "item", "event", "lore", "world rule"],
+    "importance_range": [1, 5],
+    "loom": ["conditions", "actions", "world state", "HUD", "quests", "inventory", "choices"],
+    "publishing": ["private by default", "Hub publishing", "playtest links", "creator update diff"],
+    "portability": ["world export", "world import", "platform import"]
+  }
+}

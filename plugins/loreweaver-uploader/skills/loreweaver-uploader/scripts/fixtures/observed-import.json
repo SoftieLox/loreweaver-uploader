@@ -1,0 +1,11 @@
+{
+  "counts": {
+    "lore_cards": 3,
+    "by_type": {"location": 1, "faction": 1, "item": 1},
+    "relationships": 2,
+    "loom_threads": 1,
+    "quests": 1,
+    "inventory": 1
+  },
+  "sample_card_ids": ["glass-march", "weather-guild", "storm-key"]
+}

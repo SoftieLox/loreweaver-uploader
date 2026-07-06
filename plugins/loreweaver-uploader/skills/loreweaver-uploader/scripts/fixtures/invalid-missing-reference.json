@@ -1,0 +1,20 @@
+{
+  "mode": "world",
+  "title": "Broken Example",
+  "premise": "Used to verify validation.",
+  "lore_cards": [
+    {
+      "id": "bad id",
+      "title": "",
+      "content": "",
+      "importance": 9
+    }
+  ],
+  "relationships": [
+    {
+      "from": "missing",
+      "to": "also-missing",
+      "label": ""
+    }
+  ]
+}

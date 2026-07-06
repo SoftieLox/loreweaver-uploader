@@ -1,0 +1,11 @@
+{
+  "name": "Harbour Lore",
+  "description": "A nautical fantasy setting.",
+  "entries": {
+    "0": {
+      "comment": "The Tide Bell",
+      "key": ["bell", "tide"],
+      "content": "The bell rings once for every century currently touching the harbour."
+    }
+  }
+}

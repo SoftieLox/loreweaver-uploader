@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2",
+  "mode": "world",
+  "title": "The Glass March",
+  "description": "Trade memories for weather in a city under silver storms.",
+  "premise": "The Glass March survives by turning memories into calm weather. Tonight, the city has run out.",
+  "opening": "The first thunderclap breaks every window in the guildhall. What do you do?",
+  "tone": ["tense", "melancholic"],
+  "style_rules": ["Preserve player agency.", "Make the cost of magic visible."],
+  "genres": ["Fantasy", "Mystery"],
+  "tags": ["memory magic", "political intrigue"],
+  "content_rating": "Teen",
+  "visibility": "private",
+  "cover": "cover.png",
+  "lore_cards": [
+    {
+      "id": "glass-march",
+      "type": "location",
+      "title": "The Glass March",
+      "content": "A border city beneath a permanent silver storm.",
+      "keywords": ["Glass March", "silver storm"],
+      "importance": 4
+    },
+    {
+      "id": "weather-guild",
+      "type": "faction",
+      "title": "Weather Guild",
+      "content": "The guild buys memories and converts them into calm skies.",
+      "keywords": ["Weather Guild", "guild"],
+      "importance": 4
+    },
+    {
+      "id": "storm-key",
+      "type": "item",
+      "title": "Storm Key",
+      "content": "A brass key that can unlock the reservoir beneath the guildhall.",
+      "keywords": ["Storm Key"],
+      "importance": 3
+    }
+  ],
+  "relationships": [
+    {"from": "weather-guild", "to": "glass-march", "label": "governs weather in"},
+    {"from": "storm-key", "to": "weather-guild", "label": "belongs to"}
+  ],
+  "loom": {
+    "variables": [
+      {"name": "storm-level", "type": "integer", "minimum": 0, "maximum": 5, "initial": 1},
+      {"name": "reservoir-open", "type": "boolean", "initial": false}
+    ],
+    "threads": [
+      {
+        "id": "open-reservoir",
+        "name": "Open the reservoir",
+        "conditions": [{"type": "item_used", "target_kind": "lore_card", "target": "storm-key"}],
+        "actions": [{"type": "set_state", "variable": "reservoir-open", "value": true}],
+        "repeat": "once"
+      }
+    ],
+    "quests": [
+      {"id": "calm-the-storm", "title": "Calm the Storm", "completion": {"variable": "reservoir-open", "equals": true}}
+    ],
+    "inventory": [
+      {"id": "storm-key", "title": "Storm Key", "initial_quantity": 1}
+    ],
+    "hud": {"bars": [{"variable": "storm-level", "label": "Storm"}]}
+  },
+  "settings": {},
+  "source": {},
+  "extensions": {},
+  "creator_notes": ""
+}
