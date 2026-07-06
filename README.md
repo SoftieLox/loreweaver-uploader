@@ -1,5 +1,8 @@
 # LoreWeaver Uploader
 
+[![Validate marketplace](https://github.com/SoftieLox/loreweaver-uploader/actions/workflows/validate.yml/badge.svg)](https://github.com/SoftieLox/loreweaver-uploader/actions/workflows/validate.yml)
+[![MIT License](https://img.shields.io/badge/license-MIT-violet.svg)](LICENSE)
+
 A Codex plugin by SoftieLox for designing, validating, converting, playtesting, and publishing LoreWeaver AI worlds and character experiences.
 
 ## Highlights
@@ -26,6 +29,12 @@ codex plugin add loreweaver-uploader@softielox
 ```
 
 Restart Codex and begin a new thread after installation.
+
+## Validation coverage
+
+Automated checks run on Windows and Linux with Python 3.11 and 3.12. They verify marketplace structure, manifest metadata, bundled assets, skill packaging, prohibited generated files, converters, validators, native Lore and Loom round-trips, diffs, QA, import reconciliation, privacy-copy preparation, and synthetic regression fixtures.
+
+Live LoreWeaver creation, deletion, publication, full-world exports, non-null native image values, and condition/action types absent from supplied exports still require targeted manual verification.
 
 ## Safety
 

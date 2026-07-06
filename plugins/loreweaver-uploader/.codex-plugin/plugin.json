@@ -1,13 +1,13 @@
 {
   "name": "loreweaver-uploader",
-  "version": "0.1.0+codex.20260706110520",
+  "version": "0.1.0+codex.20260706163656",
   "description": "Design, validate, import, playtest, and publish living worlds and character experiences for LoreWeaver AI.",
   "author": {
     "name": "SoftieLox",
-    "url": "https://github.com/kcaswell1811-design"
+    "url": "https://github.com/SoftieLox"
   },
-  "homepage": "https://github.com/kcaswell1811-design/loreweaver-uploader",
-  "repository": "https://github.com/kcaswell1811-design/loreweaver-uploader",
+  "homepage": "https://github.com/SoftieLox/loreweaver-uploader",
+  "repository": "https://github.com/SoftieLox/loreweaver-uploader",
   "license": "MIT",
   "keywords": [
     "loreweaver",
