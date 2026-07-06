@@ -16,7 +16,7 @@ A Codex plugin by SoftieLox for designing, validating, converting, playtesting, 
 Add the public marketplace:
 
 ```text
-codex plugin marketplace add kcaswell1811-design/loreweaver-uploader
+codex plugin marketplace add softielox/loreweaver-uploader
 ```
 
 Then install the plugin:

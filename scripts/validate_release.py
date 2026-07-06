@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 import subprocess
 import sys
@@ -98,11 +99,14 @@ def main() -> int:
 
     fixture_runner = plugin / "skills" / "loreweaver-uploader" / "scripts" / "run_fixture_tests.py"
     if not errors:
+        environment = os.environ.copy()
+        environment["PYTHONDONTWRITEBYTECODE"] = "1"
         completed = subprocess.run(
             [sys.executable, str(fixture_runner)],
             cwd=fixture_runner.parent,
             text=True,
             capture_output=True,
+            env=environment,
         )
         print(completed.stdout, end="")
         if completed.returncode:

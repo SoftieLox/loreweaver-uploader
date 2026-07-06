@@ -1,6 +1,6 @@
 # LoreWeaver Uploader
 
-[![Validate marketplace](https://github.com/kcaswell1811-design/loreweaver-uploader/actions/workflows/validate.yml/badge.svg)](https://github.com/kcaswell1811-design/loreweaver-uploader/actions/workflows/validate.yml)
+[![Validate marketplace](https://github.com/SoftieLox/loreweaver-uploader/actions/workflows/validate.yml/badge.svg)](https://github.com/SoftieLox/loreweaver-uploader/actions/workflows/validate.yml)
 [![MIT License](https://img.shields.io/badge/license-MIT-violet.svg)](LICENSE)
 
 A Codex plugin by SoftieLox for designing, validating, converting, playtesting, and publishing LoreWeaver AI worlds and character experiences.
